@@ -1,0 +1,14 @@
+{
+  "name": "theLoot Token List",
+  "timestamp": "2025-11-06T00:00:00+00:00",
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x6d97F12bBE1fC340B608d747eF89e1C3C7e51f82",
+      "name": "theLoot",
+      "symbol": "LOOT",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tokentheLoot/loot/main/logo.png"
+    }
+  ]
+}
