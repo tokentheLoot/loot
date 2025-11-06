@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whitepaper - theLoot (LOOT)</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 2.5cm;
+    }
+
+    body {
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.6;
+      font-size: 11.5pt;
+    }
+
+    h1, h2, h3 {
+      color: #111;
+      font-weight: 600;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 0.4rem;
+      font-size: 20pt;
+    }
+
+    h2 {
+      margin-top: 1.8rem;
+      font-size: 14pt;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.2rem;
+    }
+
+    p, ul, li {
+      margin-bottom: 0.8rem;
+    }
+
+    ul {
+      margin-left: 1.2rem;
+    }
+
+    a {
+      color: #0046b8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    img.logo {
+      display: block;
+      margin: 0 auto 1rem auto;
+      width: 150px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 9pt;
+      color: #666;
+      border-top: 1px solid #ccc;
+      padding-top: 0.5rem;
+    }
+
+    /* Estilo para impresión */
+    @media print {
+      a::after {
+        content: " (" attr(href) ")";
+        font-size: 9pt;
+        color: #555;
+      }
+      footer {
+        position: fixed;
+        bottom: 1cm;
+        left: 0;
+        right: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="https://raw.githubusercontent.com/tokentheLoot/loot/main/logo.png" alt="theLoot logo" class="logo">
+
+  <h1>theLoot (LOOT)</h1>
+  <p class="center"><strong>Token ERC-20 • 21,000,000 LOOT • Contrato verificado en Ethereum</strong></p>
+
+  <h2>1. Introducción</h2>
+  <p><strong>theLoot (LOOT)</strong> es un token ERC-20 desplegado en la red principal de Ethereum, diseñado para servir como una moneda digital orientada a pagos en comercios y plataformas descentralizadas. Su concepto se inspira en la idea del “botín digital”, un valor libre y distribuido entre quienes lo descubren, comercian o guardan como tesoro.</p>
+
+  <h2>2. Propósito del proyecto</h2>
+  <p>El propósito de <strong>theLoot</strong> es facilitar la adopción de pagos descentralizados y fomentar un ecosistema de intercambio real, sin depender de bancos ni monedas fiat. Su estructura técnica asegura compatibilidad con cualquier billetera compatible con ERC-20 (como MetaMask) y con protocolos DeFi como Uniswap.</p>
+
+  <h2>3. Datos técnicos</h2>
+  <ul>
+    <li><strong>Nombre:</strong> theLoot</li>
+    <li><strong>Símbolo:</strong> LOOT</li>
+    <li><strong>Tipo de token:</strong> ERC-20</li>
+    <li><strong>Suministro total:</strong> 21,000,000 LOOT</li>
+    <li><strong>Dirección del contrato:</strong> 
+      <a href="https://etherscan.io/token/0xbcf89b0ee8d06a3c3d9ef5bdd32b61bdbf9ee24f">0xbcf89b0ee8d06a3c3d9ef5bdd32b61bdbf9ee24f</a>
+    </li>
+    <li><strong>Red:</strong> Ethereum Mainnet</li>
+    <li><strong>Comisión en Uniswap:</strong> 0.3%</li>
+  </ul>
+
+  <h2>4. Descentralización y confianza</h2>
+  <p>Para garantizar la confianza total, el creador del contrato planea ejecutar <code>renounceOwnership()</code> una vez completadas las verificaciones públicas en Etherscan y las integraciones con los canales oficiales. Esto eliminará cualquier privilegio de propietario, convirtiendo a theLoot en un token verdaderamente descentralizado.</p>
+
+  <h2>5. Liquidez y trading</h2>
+  <p>theLoot (LOOT) cuenta con liquidez inicial en Uniswap V3 con el par <strong>LOOT / USDT</strong> y comisiones del 0.3%. La comunidad puede participar como proveedor de liquidez y recibir una parte proporcional de las comisiones generadas.</p>
+
+  <ul>
+    <li><a href="https://app.uniswap.org/swap?inputCurrency=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&outputCurrency=0xbcf89b0ee8d06a3c3d9ef5bdd32b61bdbf9ee24f&chain=mainnet">Comprar LOOT con USDT</a></li>
+    <li><a href="https://app.uniswap.org/add/v3/LOOT-USDT/3000">Agregar liquidez al par LOOT/USDT</a></li>
+    <li><a href="https://app.uniswap.org/swap?inputCurrency=0xbcf89b0ee8d06a3c3d9ef5bdd32b61bdbf9ee24f&outputCurrency=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&chain=mainnet">Vender LOOT por USDT</a></li>
+  </ul>
+
+  <h2>6. Canales oficiales</h2>
+  <ul>
+    <li><strong>Correo oficial:</strong> <a href="mailto:tokentheloot@hotmail.com">tokentheloot@hotmail.com</a></li>
+    <li><strong>Telegram:</strong> <a href="https://t.me/tokentheLoot">https://t.me/tokentheLoot</a></li>
+    <li><strong>GitHub:</strong> <a href="https://github.com/tokentheLoot/loot">https://github.com/tokentheLoot/loot</a></li>
+  </ul>
+
+  <h2>7. Hoja de ruta</h2>
+  <ul>
+    <li><strong>Fase 1:</strong> Creación y verificación del contrato ERC-20.</li>
+    <li><strong>Fase 2:</strong> Publicación de la web y canales oficiales.</li>
+    <li><strong>Fase 3:</strong> Expansión de liquidez y adopción por comercios.</li>
+    <li><strong>Fase 4:</strong> Renuncia de propiedad y completa descentralización.</li>
+  </ul>
+
+  <h2>8. Aviso legal</h2>
+  <p>theLoot (LOOT) es un proyecto experimental y no constituye una oferta de inversión ni una promesa de rentabilidad. Cada usuario debe realizar su propia evaluación antes de interactuar con el token. El equipo no asume responsabilidad alguna por el uso o custodia de los activos por parte de terceros.</p>
+
+  <footer>
+    © 2025 theLoot (LOOT) — Proyecto descentralizado ERC-20
+  </footer>
+</body>
+</html>
