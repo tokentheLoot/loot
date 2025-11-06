@@ -4,16 +4,17 @@
 <svg
    version="1.1"
    id="svg1"
-   width="1024"
-   height="1024"
-   viewBox="0 0 1024 1024"
+   width="32"
+   height="32"
+   viewBox="0 0 32 32"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
      id="defs1" />
   <g
-     id="g1">
+     id="g1"
+     transform="scale(0.03125)">
     <image
        width="1024"
        height="1024"
