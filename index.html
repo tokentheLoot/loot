@@ -4,33 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>theLoot (LOOT) — Decentralized Treasure for the Real World</title>
-
-  <!-- 🪙 SEO & Project Identity -->
-  <meta name="description" content="theLoot (LOOT) is an experimental ERC-20 token for decentralized commerce and digital ownership. Verified on Etherscan, tradable on Uniswap, and designed for real-world crypto payments." />
-  <meta name="keywords" content="theLoot, LOOT, ERC-20, Ethereum token, decentralized commerce, crypto payments, DeFi, Uniswap, Etherscan" />
-  <meta name="author" content="theLoot Project Team" />
-  <meta name="organization" content="theLoot Project" />
-  <meta name="contact" content="theloot.project@icloud.com" />
-
-  <!-- 🔗 Social / Open Graph Metadata -->
-  <meta property="og:title" content="theLoot (LOOT) — Decentralized Commerce Token" />
-  <meta property="og:description" content="An ERC-20 token exploring decentralized value creation, designed for real-world payments and business use." />
-  <meta property="og:url" content="https://tokentheloot.github.io/loot/" />
-  <meta property="og:image" content="https://tokentheloot.github.io/loot/logo.svg" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="en_US" />
-
-  <!-- 🐦 Twitter Card Metadata -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="theLoot (LOOT) — ERC-20 Token for Decentralized Commerce" />
-  <meta name="twitter:description" content="Experimental token for decentralized value exchange and digital ownership." />
-  <meta name="twitter:image" content="https://tokentheloot.github.io/loot/logo.svg" />
-
-  <!-- 🧩 Favicon -->
-  <link rel="icon" href="logo.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="theLoot (LOOT) is an experimental ERC-20 token for commerce payments and digital ownership.">
+  <!-- Favicon -->
+  <link rel="icon" href="logo.png" sizes="32x32" type="image/png">
   <meta name="theme-color" content="#0b0b0b">
 
-  <!-- 🎨 Styles -->
   <style>
     :root{
       --bg:#0b0b0b; --panel:#101012; --gold:#d6a934; --muted:#bfbfbf; --accent:#f5d77a;
@@ -60,23 +38,24 @@
     ul{margin:8px 0 0 18px}
     li{margin:6px 0}
     .grid{display:grid;grid-template-columns:1fr 320px;gap:16px;margin-top:16px}
-    footer{margin-top:24px;padding:16px 0;border-top:1px solid var(--border);color:var(--muted);font-size:13px;text-align:center}
-    .links-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px;justify-content:center}
+    footer{margin-top:24px;padding:12px 0;border-top:1px solid var(--border);color:var(--muted);font-size:13px}
+    .links-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
     @media(max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
   <div class="wrap">
+    <!-- Top bar -->
     <header>
       <div class="brand">
-        <img src="logo.svg" alt="theLoot logo">
+        <img src="logo.png" alt="theLoot logo">
         <h1>theLoot <span style="color:var(--gold)">(LOOT)</span></h1>
       </div>
       <nav class="links-row">
-        <a class="navlink" href="https://etherscan.io/token/0xbcf89b0ee8d06a3c3d9ef5bdd32b61bdbf9ee24f" target="_blank">Etherscan</a>
-        <a class="navlink" href="https://github.com/tokentheLoot/loot" target="_blank">GitHub</a>
-        <a class="navlink" href="https://t.me/tokentheLoot" target="_blank">Telegram</a>
-        <a class="navlink" href="https://github.com/tokentheLoot/loot/blob/main/docs/whitepaper.pdf" target="_blank">Whitepaper</a>
+        <a class="navlink" href="https://etherscan.io/token/0xbcf89b0ee8d06a3c3d9ef5bdd32b61bdbf9ee24f" target="_blank" rel="noopener">Etherscan</a>
+        <a class="navlink" href="https://github.com/tokentheLoot/loot" target="_blank" rel="noopener">GitHub</a>
+        <a class="navlink" href="https://t.me/tokentheLoot" target="_blank" rel="noopener">Telegram</a>
+        <a class="navlink" href="https://github.com/tokentheLoot/loot/blob/main/docs/whitepaper.md" target="_blank" rel="noopener">Whitepaper</a>
       </nav>
       <div class="lang">
         <button data-lang="en" class="active">EN</button>
@@ -85,26 +64,101 @@
       </div>
     </header>
 
-    <!-- ... (resto igual, mantiene secciones y traducciones) ... -->
+    <!-- HERO -->
+    <section class="hero">
+      <div class="card">
+        <div style="display:flex; gap:16px; align-items:center;">
+          <div class="logo-big">
+            <img src="logo.png" alt="theLoot emblem">
+          </div>
+          <div>
+            <h2 data-i18n="tagline">Decentralized Treasure for the Real World</h2>
+            <p data-i18n="lead">An experimental ERC-20 exploring decentralized value and crypto payments for commerce.</p>
+            <div class="actions">
+              <a class="btn primary" target="_blank" rel="noopener"
+                 href="https://app.uniswap.org/swap?inputCurrency=0xdac17f958d2ee523a2206206994597c13d831ec7&outputCurrency=0xbcf89b0ee8d06a3c3d9ef5bdd32b61bdbf9ee24f&chain=mainnet"
+                 data-i18n="buy">Buy LOOT (USDT → LOOT)</a>
+              <a class="btn" target="_blank" rel="noopener"
+                 href="https://app.uniswap.org/positions/create/v4?currencyA=0xbcf89b0ee8d06a3c3d9ef5bdd32b61bdbf9ee24f&currencyB=0xdac17f958d2ee523a2206206994597c13d831ec7&chain=ethereum&fee=%7B%22feeAmount%22%3A3000%2C%22tickSpacing%22%3A60%2C%22isDynamic%22%3Afalse%7D"
+                 data-i18n="liquidity">Add Liquidity</a>
+              <a class="btn" target="_blank" rel="noopener"
+                 href="https://etherscan.io/address/0xbcf89b0ee8d06a3c3d9ef5bdd32b61bdbf9ee24f#code"
+                 data-i18n="contract">View Contract</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h2 data-i18n="quick">Quick Links</h2>
+        <ul>
+          <li><a href="https://app.uniswap.org/swap?inputCurrency=0xbcf89b0ee8d06a3c3d9ef5bdd32b61bdbf9ee24f&outputCurrency=0xdac17f958d2ee523a2206206994597c13d831ec7&chain=mainnet" target="_blank" rel="noopener" data-i18n="sell">Sell LOOT → USDT</a></li>
+          <li><a href="https://www.geckoterminal.com/eth/pools/0xf8d70ddc643e3b03adfff99ca537d2194ab41913" target="_blank" rel="noopener">GeckoTerminal Pool</a></li>
+          <li><a href="mailto:theloot.project@icloud.com">theloot.project@icloud.com</a></li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- MAIN GRID -->
+    <section class="grid">
+      <article class="card">
+        <h2 data-i18n="aboutTitle">About LOOT</h2>
+        <p data-i18n="aboutBody">
+          theLoot (LOOT) is an experimental ERC-20 token exploring decentralized value creation. It aims to enable crypto payments between users and merchants with low friction and full transparency.
+        </p>
+
+        <h3 data-i18n="commerceTitle">Commerce Usage</h3>
+        <p data-i18n="commerceBody">
+          Merchants can accept LOOT via Web3 wallets and QR codes, and instantly swap to stablecoins (e.g., USDT) on Uniswap to manage volatility while keeping liquidity.
+        </p>
+
+        <h3 data-i18n="tokenomicsTitle">Tokenomics</h3>
+        <ul>
+          <li><strong>Total Supply:</strong> 21,000,000 LOOT</li>
+          <li><strong>Decimals:</strong> 18</li>
+          <li><strong>Contract:</strong> <a href="https://etherscan.io/address/0xbcf89b0ee8d06a3c3d9ef5bdd32b61bdbf9ee24f" target="_blank" rel="noopener">0xbcf8…ee24f</a></li>
+          <li data-i18n="initialLiq"><strong>Initial Liquidity:</strong> 8 LOOT / 8 USDT (Uniswap V3)</li>
+        </ul>
+
+        <h3 data-i18n="whitepaperTitle">Whitepaper</h3>
+        <p><a href="https://github.com/tokentheLoot/loot/blob/main/docs/whitepaper.md" target="_blank" rel="noopener" data-i18n="whitepaperLink">Read theLoot Whitepaper</a></p>
+      </article>
+
+      <aside class="card">
+        <h2 data-i18n="teamTitle">Team / About</h2>
+        <p data-i18n="teamBody">
+          Built by theLoot Project Team — an independent group experimenting with decentralized payments and liquidity-backed ecosystems. Contact us via Telegram or email.
+        </p>
+
+        <h3 data-i18n="nextTitle">Next Steps</h3>
+        <p data-i18n="nextBody">
+          Contract verified on Etherscan. Ownership renounce (renounceOwnership) is planned after testing to enhance transparency and community confidence. Additional liquidity will be added progressively.
+        </p>
+
+        <h3>Official</h3>
+        <div class="links-row">
+          <a class="navlink" href="https://t.me/tokentheLoot" target="_blank" rel="noopener">Telegram</a>
+          <a class="navlink" href="https://github.com/tokentheLoot/loot" target="_blank" rel="noopener">GitHub</a>
+          <a class="navlink" href="https://tokentheloot.github.io/loot/" target="_blank" rel="noopener">Website</a>
+        </div>
+      </aside>
+    </section>
 
     <footer>
-      <div>© 2025 theLoot (LOOT) — experimental ERC-20 token for decentralized commerce. Developed by theLoot Project Team.</div>
-      <div>Official contact: <a href="mailto:theloot.project@icloud.com">theloot.project@icloud.com</a></div>
-      <div class="links-row">
-        <a href="https://etherscan.io/token/0xbcf89b0ee8d06a3c3d9ef5bdd32b61bdbf9ee24f" target="_blank">Etherscan</a>
-        <a href="https://github.com/tokentheLoot/loot" target="_blank">GitHub</a>
-        <a href="https://t.me/tokentheLoot" target="_blank">Telegram</a>
-        <a href="https://github.com/tokentheLoot/loot/blob/main/docs/whitepaper.pdf" target="_blank">Whitepaper</a>
-      </div>
-    </footer>
+     <div>© 2025 theLoot (LOOT) — experimental ERC-20 token for decentralized commerce.</div>
+     <div>Developed by theLoot Project Team — contact: 
+      <a href="mailto:theloot.project@icloud.com">theloot.project@icloud.com</a>
+     </div>
+   </footer>
+
   </div>
 
   <!-- Language Switch -->
   <script>
     const dict = {
-      en:{tagline:"Decentralized Treasure for the Real World",lead:"An experimental ERC-20 exploring decentralized value and crypto payments for commerce."},
-      es:{tagline:"Tesoro descentralizado para el mundo real",lead:"Token ERC-20 experimental centrado en valor descentralizado y pagos cripto para comercios."},
-      zh:{tagline:"面向现实世界的去中心化宝藏",lead:"实验性 ERC-20 代币，专注于去中心化价值与商户加密支付。"}
+      en:{tagline:"Decentralized Treasure for the Real World",lead:"An experimental ERC-20 exploring decentralized value and crypto payments for commerce.",buy:"Buy LOOT (USDT → LOOT)",liquidity:"Add Liquidity",contract:"View Contract",quick:"Quick Links",sell:"Sell LOOT → USDT",aboutTitle:"About LOOT",aboutBody:"theLoot (LOOT) is an experimental ERC-20 token exploring decentralized value creation. It aims to enable crypto payments between users and merchants with low friction and full transparency.",commerceTitle:"Commerce Usage",commerceBody:"Merchants can accept LOOT via Web3 wallets and QR codes, and instantly swap to stablecoins (e.g., USDT) on Uniswap to manage volatility while keeping liquidity.",tokenomicsTitle:"Tokenomics",initialLiq:"Initial Liquidity: 8 LOOT / 8 USDT (Uniswap V3)",whitepaperTitle:"Whitepaper",whitepaperLink:"Read theLoot Whitepaper",teamTitle:"Team / About",teamBody:"Built by theLoot Project Team — an independent group experimenting with decentralized payments and liquidity-backed ecosystems. Contact us via Telegram or email.",nextTitle:"Next Steps",nextBody:"Contract verified on Etherscan. Ownership renounce (renounceOwnership) is planned after testing to enhance transparency and community confidence. Additional liquidity will be added progressively."},
+      es:{tagline:"Tesoro descentralizado para el mundo real",lead:"Token ERC-20 experimental centrado en valor descentralizado y pagos cripto para comercios.",buy:"Comprar LOOT (USDT → LOOT)",liquidity:"Añadir Liquidez",contract:"Ver Contrato",quick:"Enlaces rápidos",sell:"Vender LOOT → USDT",aboutTitle:"Acerca de LOOT",aboutBody:"theLoot (LOOT) es un token ERC-20 experimental que explora nuevas formas de creación de valor descentralizado. Facilita pagos cripto entre usuarios y comercios con baja fricción y total transparencia.",commerceTitle:"Uso en comercios",commerceBody:"Los comercios pueden aceptar LOOT con wallets Web3 y códigos QR, y convertir al instante a stablecoins (p. ej., USDT) en Uniswap para gestionar volatilidad manteniendo liquidez.",tokenomicsTitle:"Tokenomics",initialLiq:"Liquidez inicial: 8 LOOT / 8 USDT (Uniswap V3)",whitepaperTitle:"Whitepaper",whitepaperLink:"Leer el Whitepaper de theLoot",teamTitle:"Equipo / Sobre nosotros",teamBody:"Desarrollado por theLoot Project Team — grupo independiente que experimenta con pagos descentralizados y ecosistemas con liquidez. Contacto por Telegram o email.",nextTitle:"Próximos pasos",nextBody:"Contrato verificado en Etherscan. Se prevé ejecutar renounceOwnership tras las pruebas para aumentar la transparencia y la confianza. Se añadirá más liquidez progresivamente."},
+      zh:{tagline:"面向现实世界的去中心化宝藏",lead:"实验性 ERC-20 代币，专注于去中心化价值与商户加密支付。",buy:"购买 LOOT（USDT → LOOT）",liquidity:"添加流动性",contract:"查看合约",quick:"快捷链接",sell:"卖出 LOOT → USDT",aboutTitle:"关于 LOOT",aboutBody:"theLoot（LOOT）是探索去中心化价值创造的实验性 ERC-20 代币，旨在以低摩擦、透明的方式实现用户与商户之间的加密支付。",commerceTitle:"商户使用",commerceBody:"商户可通过 Web3 钱包与二维码收款，并在 Uniswap 上即时兑换为稳定币（如 USDT），以管理波动并保持流动性。",tokenomicsTitle:"代币经济",initialLiq:"初始流动性：8 LOOT / 8 USDT（Uniswap V3）",whitepaperTitle:"白皮书",whitepaperLink:"阅读 theLoot 白皮书",teamTitle:"团队 / 关于",teamBody:"由 theLoot 项目团队构建——独立团队，专注于去中心化支付与流动性生态实验。欢迎通过 Telegram 或邮件联系。",nextTitle:"下一步",nextBody:"合约已在 Etherscan 验证。测试完成后计划放弃所有权（renounceOwnership），以增强透明度与社区信心。将逐步增加流动性。"}
     };
     const setLang=l=>{const t=dict[l]||dict.en;document.querySelectorAll("[data-i18n]").forEach(e=>{const k=e.getAttribute("data-i18n");if(t[k])e.textContent=t[k];});document.querySelectorAll(".lang button").forEach(b=>b.classList.toggle("active",b.dataset.lang===l));document.documentElement.lang=l;localStorage.setItem("loot_lang",l);}
     setLang(localStorage.getItem("loot_lang")||"en");
